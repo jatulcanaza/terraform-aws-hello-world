@@ -18,5 +18,6 @@ jobs:
 
       - name: Build and push
         run: |
+          cd docker
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/hello-asg:latest .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/hello-asg:latest
