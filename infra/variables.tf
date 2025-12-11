@@ -10,7 +10,7 @@ variable "ami_id" {
 
 variable "key_name" {
   type    = string
-  default = "Test1Key"  # <- reemplaza por tu key
+  default = "Test1Key"  
 }
 
 variable "instance_type" {
@@ -20,17 +20,17 @@ variable "instance_type" {
 
 variable "min_size" {
   type    = number
-  default = 3
+  default = 4
 }
 
 variable "max_size" {
   type    = number
-  default = 7
+  default = 6
 }
 
 variable "desired_capacity" {
   type    = number
-  default = 3
+  default = 4
 }
 
 variable "vpc_id" {
